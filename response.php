@@ -10,7 +10,7 @@ $obj1->format = 3;//0 if normal, 1 if double Height, 2 if double Height + Width,
 array_push($a,$obj1);
 
 
-echo json_encode($a,JSON_FORCE_OBJECT);
+echo json_encode($a);
 //Note that same sequence will be used for printing content
 //Note: If any non english entry is added, it will get auto get converted to text special if this setting is on in the app. You will find this setting in Settings->Special Characters
 ?>
