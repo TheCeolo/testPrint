@@ -52,8 +52,8 @@ $aa= '{"0":{"type":0,"content":"MMHARA My Title id=\u00ef\u00ee\u00ec\u00c4\u00c
     We have this<\/div>
     Sahi hai<\/div><\/div>"},"6":{"type":0,"content":"?? ?? ?? ???? ??? ","bold":0,"align":0},"7":{"type":0,"content":"This text has
     two lines","bold":0,"align":0}}';
-echo $aa;
-//echo json_encode($a,JSON_FORCE_OBJECT);
+//echo $aa;
+echo json_encode($aa,JSON_FORCE_OBJECT);
 //Note that same sequence will be used for printing content
 //Note: If any non english entry is added, it will get auto get converted to text special if this setting is on in the app. You will find this setting in Settings->Special Characters
 ?>
