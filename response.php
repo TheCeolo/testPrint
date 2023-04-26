@@ -5,44 +5,46 @@ $a = array();
 
 //sending text entry
 $obj1->type = 0;//text
-$obj1->content = 'My Title';//any string	
+$obj1->content = 'My Title sssssssssssssssssssssssssssssssssss';//any string	
 $obj1->bold = 1;//0 if no, 1 if yes
 $obj1->align =2;//0 if left, 1 if center, 2 if right
 $obj1->format = 3;//0 if normal, 1 if double Height, 2 if double Height + Width, 3 if double Width, 4 if small
 array_push($a,$obj1);
-
+print($obj1);
 //sending image entry		
 $obj2->type = 1;//image
 $obj2->path = 'https://it.m.wikipedia.org/wiki/File:Circle_-_black_simple.svg';//complete filepath on your web server; make sure that it is not big size
 $obj2->align = 2;//0 if left, 1 if center, 2 if right; set left align for big size images
 array_push($a,$obj2);
+print($obj2);
 
-//sending barcode entry		
+/* //sending barcode entry		
 $obj3->type = 2;//barcode
 $obj3->value = '1234567890123';//valid barcode value
 $obj3->width = 100;//valid barcode width
 $obj3->height = 50;//valid barcode height
 $obj3->align = 0;//0 if left, 1 if center, 2 if right
-array_push($a,$obj3);
+array_push($a,$obj3); */
 
-//sending QR entry		
+/* //sending QR entry		
 $obj4->type = 3;//QR code
 $obj4->value = 'sample qr text';//valid QR code value
 $obj4->size = 40;//valid QR code size in mm
 $obj4->align = 2;//0 if left, 1 if center, 2 if right
-array_push($a,$obj4);
+array_push($a,$obj4); */
 
 //sending HTML Code	
 $obj5->type = 4;//HTML Code
 $obj5->content = "<center><span style=\"font-weight:bold; font-size:20px;\">This is sample text</span></center>";
 array_push($a,$obj5);
+print($obj5);
 
-//sending empty line
+/* //sending empty line
 $obj6->type = 0;//text
 $obj6->content = ' ';//empty line
 $obj6->bold = 0;
 $obj6->align = 0;
-array_push($a,$obj6);
+array_push($a,$obj6); */
 
 //sending multi lines text
 $obj7->type = 0;//text
@@ -50,6 +52,7 @@ $obj7->content = 'This text has<br />two lines';//multiple lines text
 $obj7->bold = 0;
 $obj7->align = 0;
 array_push($a,$obj7);
+print($obj7);
 
 echo json_encode($a,JSON_FORCE_OBJECT);
 //Note that same sequence will be used for printing content
